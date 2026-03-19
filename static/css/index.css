@@ -744,6 +744,52 @@ code {
   }
 }
 
+/* ── Audio Demo: Answer Choices ── */
+.demo-choice {
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  background: #ffffff;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.demo-choice-correct {
+  border-color: #16a34a !important;
+  background: #f0fdf4 !important;
+  color: #15803d !important;
+  font-weight: 600;
+}
+
+/* ── Audio Demo: Model Reasoning Box ── */
+.demo-reasoning {
+  background: #f8faff;
+  border: 1.5px solid #c7d2fe;
+  border-left: 4px solid #485fc7;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin-top: 1.2rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-primary);
+}
+
+.demo-reasoning p {
+  margin: 0;
+}
+
+/* ── Audio Demo: Timestamp Highlight ── */
+.demo-timestamp {
+  display: inline-block;
+  background: #fef3c7;
+  border: 1px solid #fbbf24;
+  border-radius: 4px;
+  padding: 0 0.35rem;
+  font-size: 0.88rem;
+  color: #92400e;
+}
+
 /* Tablet Responsive */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .hero-body {
