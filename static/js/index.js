@@ -120,7 +120,16 @@ function setupVideoCarouselAutoplay() {
 }
 
 $(document).ready(function() {
-    // Check for click events on the navbar burger icon
+    // Demo tab switching
+    $('.demo-tabs li').on('click', function() {
+        var target = $(this).data('target');
+
+        $('.demo-tabs li').removeClass('is-active');
+        $(this).addClass('is-active');
+
+        $('.demo-content').removeClass('is-active');
+        $('#' + target).addClass('is-active');
+    });
 
     var options = {
 		slidesToScroll: 1,

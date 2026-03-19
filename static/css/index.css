@@ -1,3 +1,11 @@
+/* Audio Demo Tab Switching */
+.demo-content {
+  display: none;
+}
+.demo-content.is-active {
+  display: block;
+}
+
 /* Modern CSS Variables for consistent theming */
 :root {
   --primary-color: #2563eb;
